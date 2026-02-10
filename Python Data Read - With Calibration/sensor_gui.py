@@ -85,8 +85,8 @@ class CanSatGUI:
         self.bias = { name: 0.0 for name in ["ax","ay","az", "mx","my","mz"] }
         
         # MAgnetometer Biases
-        self.bias['mx'] = -11.0
-        self.bias['my'] = 10.0
+        self.bias['mx'] = 0.0
+        self.bias['my'] = 0.0
         self.bias['mz'] = 0.0
         # Accelerometer Biases
         self.bias['ax'] = 0.0
@@ -263,3 +263,4 @@ if __name__ == "__main__":
     }
     gui.update_fields(sensor_data)
     root.mainloop()
+
